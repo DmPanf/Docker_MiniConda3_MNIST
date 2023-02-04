@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  jupylab:
+    container_name: jupylab
+    build:
+      context: .
+    restart: unless-stopped
+    environment:
+      JUPYTER_TOKEN: ${TOKEN}
+    volumes:
+      - ./project:/home/project
+    ports:
+      - "8888:8888"
+    environment:
+      CUDA_VISIBLE_DEVICES: all
