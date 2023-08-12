@@ -4,7 +4,7 @@
 ## docker.mfrg.su/jupyter-lab/Dockerfile ##
 ###########################################
 
-# Copyright (c) Media Forge LLC.
+# Copyright (c) Media Forge LLC. 2023
 
 # Set the base image using miniconda
 FROM continuumio/miniconda3
