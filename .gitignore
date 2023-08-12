@@ -1,2 +1,6 @@
+.*
+.env
+env*
 env.json
+config.ini
 
