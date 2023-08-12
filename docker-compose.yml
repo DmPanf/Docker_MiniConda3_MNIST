@@ -6,11 +6,10 @@ services:
     build:
       context: .
     restart: unless-stopped
-    environment:
-      JUPYTER_TOKEN: ${TOKEN}
     volumes:
       - ./project:/home/project
     ports:
       - "8888:8888"
     environment:
+      JUPYTER_TOKEN: ${TOKEN}
       CUDA_VISIBLE_DEVICES: all
