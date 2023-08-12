@@ -2,7 +2,7 @@ version: '3'
 
 services:
   jupylab:
-    container_name: jupylab
+    container_name: jupyter_lab
     build:
       context: .
     restart: unless-stopped
